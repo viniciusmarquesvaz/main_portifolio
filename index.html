@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/93146aa192.js" crossorigin="anonymous"></script>
+		<link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/next-fonts/next-fonts.css" />
+
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Vini.io</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<a href="index.html">
+					<div class="left">
+						<img src="img/Screenshot from 2023-06-18 13-56-26.png" alt="Vini Avatar" />
+						<h2>Vinícius</h2>
+					</div>
+				</a>
+				<nav class="right">
+					<ul>
+						<li><a class="active" href="#hi">hi</a></li>
+						<!--<li><a href="#blog">blog</a></li>-->
+						<li><a href="#skill">skill</a></li>
+						<li><a href="#lab">lab</a></li>
+						<li>
+							<div class="toggle-themes">
+								<input type="checkbox" class="toggle-themes-checkbox" id="chk" />
+								<label for="chk" class="toggle-themes-shift">
+									<i class="fas fa-sun"></i>
+									<i class="fas fa-moon"></i>
+									<div class="shift"></div>
+								</label>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main id="hi" id="#home">
+				<span class="me">I'm</span>
+				<div style="display: flex">
+					<h1>
+						<span>Talented</span>
+					</h1>
+					<span style="align-self: flex-end; margin-left: 5px" class="me">in</span>
+				</div>
+				<div style="display: flex">
+					<h1>
+						<span></span>
+						<span style="align-self: center">web</span>
+					</h1>
+					<span style="align-self: flex-end; margin-left: 5px" class="me">and</span>
+				</div>
+
+				<h1>
+					<span></span>
+					<span></span>
+					<span>Analytics</span>
+				</h1>
+
+				<div class="about">
+					<p>Olá! Meu nome é Vinícius, sou um desenvolvedor de software brasileiro🇧🇷.</p>
+
+					<p>
+						Atualmente estou focado em projetos de <a>Business Intelligence</a> e <a>Análise de Dados</a>, mas já tive experiência como
+						<a>Desenvolvedor Full Stack</a>, com maior ênfase no <a>Front-end</a>. Minha paixão pela tecnologia e inovação me permite
+						explorar diferentes áreas, e embora não me restrinja a uma tecnologia específica, tenho grande afinidade com o ecossistema
+						JavaScript.
+					</p>
+
+					<p>Em 2021, iniciei uma jornada de aprofundamento no campo do desenvolvimento.</p>
+
+					<p>Atualmente, estou cursando Análise e Desenvolvimento de Sistemas.</p>
+
+					<!-- <p>
+                    Meu novo projecto é <a href="#" target="_blank">100 project with vanilla.js</a>(Ainda em desenvolvimento).
+                    inspirado no projecto do <a href="https://www.florin-pop.com/blog/2019/09/100-days-100-projects/" target="_blank">Florin Pop</a> um dos mestres que eu me inspiro
+                    bastante.
+                </p> -->
+
+					<p>
+						Nos últimos meses, tive a oportunidade de contribuir e colaborar em equipe no desenvolvimento de projetos incríveis,
+						incluindo:
+					</p>
+
+					<ul class="list">
+						<li><a href="https://www.enline-transmission.com/products/monitoring-system/">EMS Version 2</a></li>
+						<li><a href="https://www.enline-transmission.com/products/monitoring-system/#landslidesTracking">EMS Landislide</a></li>
+						<li>
+							<a href="https://www.enline-transmission.com/products/monitoring-system/#vegetationTracking">EMS Vegetarion Tracking</a>
+						</li>
+						<li><a href="https://www.enline-transmission.com/products/monitoring-system/#faultLocation">EMS Fault Location</a></li>
+						<!-- <li><a>UI Clones</a></li> -->
+					</ul>
+					<p>
+						Atualmente, estou imerso no estudo de VBA, Power BI e Google Analytics, buscando aprimorar minhas habilidades em análise de
+						dados e automação inteligente para impulsionar os negócios. Essa experiência tem um valor singular, pois complementa minhas
+						habilidades como desenvolvedor full stack, permitindo atender tanto às demandas empresariais quanto às necessidades dos
+						usuários finais. Com essa perspectiva ampliada, estou confiante de que serei capaz de oferecer soluções mais completas e
+						eficientes. 🤓
+					</p>
+					<p>Minha Zona de conforto é o React.js 💙</p>
+				</div>
+			</main>
+
+			<main id="blog"></main>
+			<main id="skill">
+				<h1>Skills</h1>
+				<div class="container" id="containerSkills">
+					<script src="/js/generateSkills.js"></script>
+				</div>
+			</main>
+
+			<main id="lab">
+				<h1>Projects</h1>
+				<nav class="navlamp">
+					<ul id="menu">
+						<li><a>All</a></li>
+						<li><a>FrontEnd</a></li>
+						<li><a>BackEnd</a></li>
+						<li><a>Analytics</a></li>
+						<div id="lavalamp"></div>
+					</ul>
+				</nav>
+				<div class="container" id="containerProject">
+					<script src="/js/generateProjects.js"></script>
+				</div>
+			</main>
+
+			<div class="social__panel on">
+				<div class="top">
+					<h3 class="t1">Created with <i class="bx bxs-heart"></i> by <span class="author">Vini</span></h3>
+				</div>
+				<span class="close-panel">&times;</span>
+				<h3 class="t2">Baixe o meu currículo</h3>
+				<div class="social__panel--item">
+					<a href="/docs/Vinícius Marques-CV.pdf" download><i class="fas fa-download"></i> </a>
+				</div>
+			</div>
+
+			<button class="btn-social">Clique Aqui</button>
+
+			<div class="footer-text">
+				<p>©2023 vini.io <span>&bull;</span> <a href="#">Política de Privacidade</a> <span>&bull;</span> <a href="#">Termos de Uso</a></p>
+				<p>Made with 💙 using Vanilla JS and Pure css(Sass).</p>
+			</div>
+
+			<footer>
+				<div class="middle">
+					<a href="https://api.whatsapp.com/send?phone=31989650759" target="_blank"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/in/viniciusmarquesvaz/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+					<a href="https://github.com/viniciusmarquesvaz" target="_blank"> <i class="bx bxl-github"></i></a>
+					<a href="mailto:viniciusmanleft@gmail.com" target="_blank"><i class="bx bx-message-rounded"></i></a>
+				</div>
+			</footer>
+			<div class="effect"></div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>

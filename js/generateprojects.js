@@ -1,16 +1,16 @@
 
-function updateScreen() {
+const updateScreen = () => {
   generateItems();
 }
 
-function handleTypeSelection(event) {
+const handleTypeSelection = (event) => {
   const selectedType = event.target.getAttribute('data-type');
   localStorage.setItem('projectType', selectedType);
   const updateEvent = new Event('projectTypeChanged');
   window.dispatchEvent(updateEvent);
   updateScreen(); 
 }
-function generateItems() {
+const generateItems = () => {
   const selectedType = localStorage.getItem('projectType') || 'All';
     const items = [
       {
@@ -60,7 +60,7 @@ function generateItems() {
         description: "Primeiro modelo de Portifólio web",
         technologies: ["Bulma", "Html", "Css", "Javascript"],
         websiteLink: "",
-        githubLink: "https://github.com/viniciusmarquesvaz",
+        githubLink: "https://github.com/viniciusmarquesvaz/Simple_Portifolio_Layout",
         role:'FrontEnd'
       },
       {
@@ -71,6 +71,16 @@ function generateItems() {
         technologies: ["Html", "Css", "Javascript"],
         websiteLink: "",
         githubLink: "https://github.com/viniciusmarquesvaz/animais-fant-sticos",
+        role:'FrontEnd'
+      },
+      {
+        imageSrc: "img/tangram.gif",
+        year: "2022",
+        title: "Tangram",
+        description: "Projeto desenvolvido em equipe de uma plataforma que usa quiz para aparender matemática financeira",
+        technologies: ["Html", "Css", "Javascript", "Python","PostgreSQL"],
+        websiteLink: "",
+        githubLink: "https://github.com/Skuld-Corp/App-Tangram",
         role:'FrontEnd'
       }
       

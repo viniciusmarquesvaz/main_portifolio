@@ -15,7 +15,7 @@ let flag_social = false;
     });
 });
 
-function removeActiveLink(){
+const removeActiveLink = ()=> {
     [...navbar].forEach(cur =>{
         cur.firstElementChild.classList.remove('active');
     });
@@ -56,7 +56,7 @@ toggle_themes_checkbox.addEventListener('change', ({target})=>{
 });
 
 
-window.addEventListener('scroll', function(){
+window.addEventListener('scroll', () =>{
     var header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
 });
@@ -72,7 +72,7 @@ close_panel.addEventListener('click',()=>{
     flag_social = !flag_social;
 });
 
-function sendEmail() {
+const sendEmail = () => {
 	Email.send({
     SecureToken : "<your generated token>",
     To : 'viniciusmanleft@gmail.com',
@@ -84,11 +84,11 @@ function sendEmail() {
     );
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const menuItems = document.querySelectorAll('#menu li');
     const lavalamp = document.getElementById('lavalamp');
   
-    function moveLavalamp() {
+    const moveLavalamp = () => {
       const selectedType = localStorage.getItem('projectType') || 'All';
       const currentItem = document.querySelector(`#menu li a[data-type="${selectedType}"]`);
   
